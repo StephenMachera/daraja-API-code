@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.7 Capstone</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Are You Bored???</h1>
+        <p>Not any more</p>
+    </div>
+    <div class="form-container">
+        <form action="/submit" method="post" class="form">
+            <label for="Amount">
+                <input type="number" id="Amount" name="amount" placeholder="eg.1" required>
+            </label>
+            <label for="number">
+                <input type="number" id="number" name="number" placeholder="eg.+254711629594" required>
+            </label>
+            <button type="submit">post</button>
+        </form>
+    </div>
+    <% if(locals.feedbackMessage){ %>
+    <p><%= feedbackMessage %></p>
+    <% } %>
+</body>
+</html>
